@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS with Global Variables</title>
+  <link rel="stylesheet" href="/variables.css">
+  <link rel="stylesheet" href="/main.css">
+  <style>
+    /* Additional inline styles */
+    .text-primary { color: var(--color-primary); }
+    .text-primary-dark { color: var(--color-primary-dark); }
+    .text-secondary { color: var(--color-secondary); }
+    .text-text-light { color: var(--color-text-light); }
+    .bg-primary { background-color: var(--color-primary); }
+    .bg-primary-light { background-color: var(--color-primary-light); }
+    .bg-primary-dark { background-color: var(--color-primary-dark); }
+    .bg-secondary { background-color: var(--color-secondary); }
+    .bg-secondary-light { background-color: var(--color-secondary-light); }
+    .bg-secondary-dark { background-color: var(--color-secondary-dark); }
+    .bg-accent { background-color: var(--color-accent); }
+    .bg-accent-light { background-color: var(--color-accent-light); }
+    .bg-accent-dark { background-color: var(--color-accent-dark); }
+    .text-white { color: white; }
+    .border-background-dark { border-color: var(--color-background-dark); }
+  </style>
+</head>
+<body class="min-h-screen p-8">
+  <div class="max-w-4xl mx-auto">
+    <header class="mb-12">
+      <h1 class="text-4xl font-bold text-primary mb-4">Tailwind CSS with Global Variables</h1>
+      <p class="text-xl text-text-light">A demonstration of using CSS custom properties with Tailwind CSS</p>
+    </header>
+
+    <main>
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-primary-dark mb-6">Color Palette Demo</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Primary Colors -->
+          <div class="rounded-lg overflow-hidden shadow-md">
+            <div class="h-24 bg-primary flex items-center justify-center text-white font-bold">Primary</div>
+            <div class="h-12 bg-primary-light flex items-center justify-center text-white">Primary Light</div>
+            <div class="h-12 bg-primary-dark flex items-center justify-center text-white">Primary Dark</div>
+          </div>
+          
+          <!-- Secondary Colors -->
+          <div class="rounded-lg overflow-hidden shadow-md">
+            <div class="h-24 bg-secondary flex items-center justify-center text-white font-bold">Secondary</div>
+            <div class="h-12 bg-secondary-light flex items-center justify-center text-white">Secondary Light</div>
+            <div class="h-12 bg-secondary-dark flex items-center justify-center text-white">Secondary Dark</div>
+          </div>
+          
+          <!-- Accent Colors -->
+          <div class="rounded-lg overflow-hidden shadow-md">
+            <div class="h-24 bg-accent flex items-center justify-center text-white font-bold">Accent</div>
+            <div class="h-12 bg-accent-light flex items-center justify-center text-white">Accent Light</div>
+            <div class="h-12 bg-accent-dark flex items-center justify-center text-white">Accent Dark</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-primary-dark mb-6">UI Components</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Card Example -->
+          <div class="card">
+            <h3 class="text-xl font-semibold text-primary mb-3">Feature Card</h3>
+            <p class="mb-4">This card uses background and text variables that automatically adjust based on the theme.</p>
+            <button class="btn-primary">Learn More</button>
+          </div>
+          
+          <!-- Form Example -->
+          <div class="card">
+            <h3 class="text-xl font-semibold text-secondary mb-3">Contact Form</h3>
+            <div class="mb-4">
+              <label class="block mb-2" for="name" style="color: var(--color-text-dark);">Name</label>
+              <input class="w-full p-2 rounded border" type="text" id="name" style="background-color: var(--color-background); color: var(--color-text); border-color: var(--color-background-dark);">
+            </div>
+            <button class="btn-secondary">Submit</button>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold text-primary-dark mb-6">System Preference</h2>
+        <p class="mb-4">This demo automatically adapts to your system's light/dark mode preference. Try changing your system theme to see it in action!</p>
+        <div class="p-4 rounded-lg text-white" style="background-color: var(--color-accent);">
+          <p>The variables in <code>variables.css</code> use the <code>@media (prefers-color-scheme: dark)</code> query to automatically switch between light and dark themes.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="mt-12 pt-6 text-center" style="border-top: 1px solid var(--color-background-dark); color: var(--color-text-light);">
+      <p>Tailwind CSS with Global Variables Pattern Demo</p>
+    </footer>
+  </div>
+</body>
+</html>

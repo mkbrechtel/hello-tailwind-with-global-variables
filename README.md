@@ -2,7 +2,7 @@
 
 This repository demonstrates the Tailwind CSS with Global Variables Pattern, showing how to implement a flexible, maintainable theming system.
 
-This repository is an example implementation of the Tailwind CSS with Global Variables Pattern. The pattern provides a structured approach to manage theming in Tailwind CSS applications using CSS custom properties while maintaining the utility-first workflow.
+This repository is an example implementation of the [Tailwind CSS with Global Variables Pattern](https://patterns.mkbrechtel.dev/development/frontend/tailwind-with-global-css-variables). The pattern provides a structured approach to manage theming in Tailwind CSS applications using CSS custom properties while maintaining the utility-first workflow.
 
 ## Features
 

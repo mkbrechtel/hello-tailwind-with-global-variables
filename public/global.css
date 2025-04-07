@@ -1,48 +1,53 @@
-/* global.css */
+/* public/global.css */
 :root {
-  /* Light theme (default) */
-  --color-primary: #3b82f6;
-  --color-primary-light: #60a5fa;
-  --color-primary-dark: #2563eb;
+  /* Colors in light mode */
+  --global-color-primary: #3b82f6;
+  --global-color-primary-light: #60a5fa;
+  --global-color-primary-dark: #2563eb;
 
-  --color-secondary: #10b981;
-  --color-secondary-light: #34d399;
-  --color-secondary-dark: #059669;
+  --global-color-secondary: #10b981;
+  --global-color-secondary-light: #34d399;
+  --global-color-secondary-dark: #059669;
 
-  --color-accent: #f59e0b;
-  --color-accent-light: #fbbf24;
-  --color-accent-dark: #d97706;
+  --global-color-accent: #f59e0b;
+  --global-color-accent-light: #fbbf24;
+  --global-color-accent-dark: #d97706;
 
-  --color-text: #1f2937;
-  --color-text-light: #4b5563;
-  --color-text-dark: #111827;
+  --global-color-text: #1f2937;
+  --global-color-text-light: #4b5563;
+  --global-color-text-dark: #111827;
 
-  --color-background: #ffffff;
-  --color-background-light: #f9fafb;
-  --color-background-dark: #f3f4f6;
+  --global-color-background: #ffffff;
+  --global-color-background-light: #f9fafb;
+  --global-color-background-dark: #f3f4f6;
+
+  /* Fonts */
+  --global-font-sans: ui-sans-serif, system-ui, sans-serif;
+  --global-font-serif: ui-serif, Georgia, Cambria, serif;
+  --global-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
 
-/* Dark theme - automatically applied when user prefers dark color scheme */
+/* Dark mode colors */
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-primary: #60a5fa;
-    --color-primary-light: #93c5fd;
-    --color-primary-dark: #3b82f6;
+    --global-color-primary: #60a5fa;
+    --global-color-primary-light: #93c5fd;
+    --global-color-primary-dark: #2563eb;
 
-    --color-secondary: #34d399;
-    --color-secondary-light: #6ee7b7;
-    --color-secondary-dark: #10b981;
+    --global-color-secondary: #34d399;
+    --global-color-secondary-light: #6ee7b7;
+    --global-color-secondary-dark: #059669;
 
-    --color-accent: #fbbf24;
-    --color-accent-light: #fcd34d;
-    --color-accent-dark: #f59e0b;
+    --global-color-accent: #fbbf24;
+    --global-color-accent-light: #fcd34d;
+    --global-color-accent-dark: #d97706;
 
-    --color-text: #f9fafb;
-    --color-text-light: #f3f4f6;
-    --color-text-dark: #e5e7eb;
+    --global-color-text: #f9fafb;
+    --global-color-text-light: #e5e7eb;
+    --global-color-text-dark: #d1d5db;
 
-    --color-background: #111827;
-    --color-background-light: #1f2937;
-    --color-background-dark: #0f172a;
+    --global-color-background: #111827;
+    --global-color-background-light: #1f2937;
+    --global-color-background-dark: #374151;
   }
 }
